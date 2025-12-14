@@ -74,3 +74,108 @@ The goal of this kata is to design, build, and test a full-stack Sweet Shop Mana
 ## 🚀 Local Setup Instructions
 
 ### 📂 Project Location
+
+
+---
+
+sweet-shop/
+
+
+---
+
+### ▶ Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+
+Backend runs at:
+
+http://localhost:8000
+
+
+Swagger API Docs:
+
+http://localhost:8000/docs
+
+▶ Frontend Setup
+cd frontend
+npm install
+npm run dev
+
+
+Frontend runs at:
+
+http://localhost:5173
+
+🧪 Running Tests
+cd backend
+pytest
+
+
+The test suite covers:
+
+Authentication
+
+Sweet CRUD operations
+
+Inventory purchase & restock logic
+
+🔁 Test-Driven Development (TDD)
+
+This project follows the Red → Green → Refactor approach:
+
+Write failing tests
+
+Implement minimal logic to pass tests
+
+Refactor code for clarity and maintainability
+
+Commit history reflects incremental, test-first development.
+
+📸 Screenshots
+Sweet Shop Dashboard
+
+The dashboard displays available sweets, pricing, stock information, purchase buttons, and admin controls.
+
+🤖 My AI Usage (Mandatory Disclosure)
+AI Tools Used
+
+ChatGPT (OpenAI)
+
+How I Used AI
+🔐 Authentication
+
+Generated initial JWT authentication boilerplate
+
+Assisted with structuring login and registration endpoints
+
+Helped debug token validation and dependency injection issues
+
+🎨 Frontend
+
+Assisted in designing React component structure
+
+Helped generate login and registration form layouts
+
+Assisted in setting up Axios API service patterns
+
+My Reflection on AI Usage
+
+AI significantly improved development speed by reducing boilerplate and assisting with debugging.
+All business logic, validation, tests, and architectural decisions were reviewed, refined, and implemented manually to ensure correctness, maintainability, and learning value.
+
+🧾 AI Co-Authorship in Git Commits
+
+For commits where AI assistance was used, the following co-author trailer was added:
+
+Co-authored-by: Claude <AI@users.noreply.github.com>
+Co-authored-by: ChatGPT <AI@users.noreply.github.com>
+
+👨‍💻 Author
+
+Ayush Tiwari
